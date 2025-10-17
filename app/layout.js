@@ -9,7 +9,7 @@ import { Toaster } from "sonner";
 const inter = Inter({ subsets: ["latin"]})
 
 export const metadata = {
-  title: "CareerAI - Your AI Career Coach",
+  title: "PrepifyAI - Your AI Career Coach",
   description: "Advance your career with personalized guidance, interview prep, and AI-powered tools for professional success.",
   icon: "icon.png",
 };
@@ -17,7 +17,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <ClerkProvider appearance={{
-      baseTheme: dark,
+      baseTheme: undefined,
     }}>
     <html lang="en" suppressHydrationWarning>
       <head>
@@ -37,7 +37,7 @@ export default function RootLayout({ children }) {
       >
         <ThemeProvider
             attribute="class"
-            defaultTheme="dark"
+            defaultTheme="light"
             enableSystem
             disableTransitionOnChange
         >

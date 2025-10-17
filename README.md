@@ -1,22 +1,10 @@
 
-<h1 align="center">💼 CareerAI – Your AI Career Coach 🤖</h1>
+<h1 align="center">💼 PrepifyAI – Your AI Career Coach 🤖</h1>
 
 <p align="center">
   <strong>Advance your career with personalized guidance, interview prep, and AI-powered tools for professional success.</strong>
 </p>
-
-<p align="center">
-  <a href="https://github.com/Abhi9708bittu/PrepifyAI">
-    <img src="https://img.shields.io/badge/GitHub-Repository-blue?style=for-the-badge&logo=github" alt="GitHub Repository" />
-  </a>
-  <a href="https://vercel.com">
-    <img src="https://img.shields.io/badge/Deployed%20on-Vercel-black?style=for-the-badge&logo=vercel" alt="Deployed on Vercel" />
-  </a>
-  <a href="https://nextjs.org">
-    <img src="https://img.shields.io/badge/Built%20with-Next.js%2015-black?style=for-the-badge&logo=next.js" alt="Built with Next.js" />
-  </a>
-</p>
-
+  
 ## 🌟 Key Highlights:
 
 - 🚀 **Modern Tech Stack**: Next.js 15, React 19, Tailwind CSS & Shadcn UI  
@@ -242,6 +230,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 </p>
 
 <p align="center">
-  <b>Thank you for visiting CareerAI! 🚀</b><br>
+  <b>Thank you for visiting PrepifyAI! 🚀</b><br>
   <i>Built with ❤️ for career advancement</i>
 </p>
