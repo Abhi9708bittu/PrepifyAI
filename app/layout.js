@@ -16,9 +16,12 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <ClerkProvider appearance={{
-      baseTheme: undefined,
-    }}>
+    <ClerkProvider 
+      publishableKey={process.env.NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY}
+      appearance={{
+        baseTheme: undefined,
+      }}
+    >
     <html lang="en" suppressHydrationWarning>
       <head>
           <link rel="icon" href="/logo5.png" sizes="any" />
