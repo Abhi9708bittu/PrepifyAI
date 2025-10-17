@@ -8,61 +8,65 @@ body {
 
 @layer base {
   :root {
-    /* Lightish color scheme */
-    --background: 210 40% 98%;
-    --foreground: 210 20% 20%;
-    --card: 210 30% 95%;
-    --card-foreground: 210 20% 20%;
-    --popover: 210 40% 98%;
-    --popover-foreground: 210 20% 20%;
-    /* PrepifyAI primary: Soft Blue */
-    --primary: 210 80% 65%;
+    /* Professional color scheme - Royal Blue, Dark Charcoal, Warm Yellow */
+    --background: 210 25% 97%; /* Soft White #F7F9FB */
+    --foreground: 0 0% 18%; /* Neutral dark gray #2E2E2E */
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 18%; /* Neutral dark gray #2E2E2E */
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 18%; /* Neutral dark gray #2E2E2E */
+    /* Royal Blue Primary #0A74DA */
+    --primary: 211 85% 45%; /* Royal Blue #0A74DA */
     --primary-foreground: 0 0% 100%;
-    --secondary: 210 25% 90%;
-    --secondary-foreground: 210 20% 20%;
-    --muted: 210 20% 92%;
-    --muted-foreground: 210 15% 50%;
-    --accent: 210 30% 88%;
-    --accent-foreground: 210 20% 20%;
+    /* Dark Charcoal Secondary #1C1C1C */
+    --secondary: 0 0% 11%; /* Dark Charcoal #1C1C1C */
+    --secondary-foreground: 0 0% 100%;
+    --muted: 210 25% 95%;
+    --muted-foreground: 0 0% 45%;
+    /* Warm Yellow Accent #FFD43B */
+    --accent: 51 100% 61%; /* Warm Yellow #FFD43B */
+    --accent-foreground: 0 0% 11%; /* Dark Charcoal for text on yellow */
     --destructive: 0 70% 65%;
     --destructive-foreground: 0 0% 100%;
-    --border: 210 25% 85%;
-    --input: 210 25% 90%;
-    --ring: 210 80% 65%;
-    --chart-1: 210 80% 65%;
-    --chart-2: 180 60% 60%;
-    --chart-3: 280 70% 65%;
-    --chart-4: 320 70% 65%;
-    --chart-5: 40 80% 65%;
+    --border: 210 25% 90%;
+    --input: 210 25% 95%;
+    --ring: 211 85% 45%; /* Royal Blue */
+    --chart-1: 211 85% 45%; /* Royal Blue */
+    --chart-2: 51 100% 61%; /* Warm Yellow */
+    --chart-3: 0 0% 11%; /* Dark Charcoal */
+    --chart-4: 210 25% 97%; /* Soft White */
+    --chart-5: 0 0% 18%; /* Neutral dark gray */
     --radius: 0.5rem;
   }
   .dark {
-    /* Lightish dark theme */
-    --background: 210 25% 15%;
-    --foreground: 210 20% 85%;
-    --card: 210 20% 18%;
-    --card-foreground: 210 20% 85%;
-    --popover: 210 25% 15%;
-    --popover-foreground: 210 20% 85%;
-    /* PrepifyAI primary on dark */
-    --primary: 210 80% 70%;
-    --primary-foreground: 210 25% 15%;
-    --secondary: 210 15% 25%;
-    --secondary-foreground: 210 20% 85%;
-    --muted: 210 15% 22%;
-    --muted-foreground: 210 15% 65%;
-    --accent: 210 20% 28%;
-    --accent-foreground: 210 20% 85%;
+    /* Professional dark theme */
+    --background: 0 0% 8%; /* Very dark background */
+    --foreground: 0 0% 85%; /* Light text */
+    --card: 0 0% 12%;
+    --card-foreground: 0 0% 85%;
+    --popover: 0 0% 8%;
+    --popover-foreground: 0 0% 85%;
+    /* Royal Blue Primary on dark */
+    --primary: 211 85% 55%; /* Slightly lighter Royal Blue for dark mode */
+    --primary-foreground: 0 0% 100%;
+    /* Dark Charcoal Secondary on dark */
+    --secondary: 0 0% 20%; /* Lighter charcoal for dark mode */
+    --secondary-foreground: 0 0% 85%;
+    --muted: 0 0% 15%;
+    --muted-foreground: 0 0% 60%;
+    /* Warm Yellow Accent on dark */
+    --accent: 51 100% 65%; /* Slightly brighter yellow for dark mode */
+    --accent-foreground: 0 0% 8%; /* Very dark for text on yellow */
     --destructive: 0 70% 70%;
-    --destructive-foreground: 210 25% 15%;
-    --border: 210 15% 30%;
-    --input: 210 15% 25%;
-    --ring: 210 80% 70%;
-    --chart-1: 210 80% 70%;
-    --chart-2: 180 60% 65%;
-    --chart-3: 280 70% 70%;
-    --chart-4: 320 70% 70%;
-    --chart-5: 40 80% 70%;
+    --destructive-foreground: 0 0% 8%;
+    --border: 0 0% 20%;
+    --input: 0 0% 15%;
+    --ring: 211 85% 55%; /* Royal Blue */
+    --chart-1: 211 85% 55%; /* Royal Blue */
+    --chart-2: 51 100% 65%; /* Warm Yellow */
+    --chart-3: 0 0% 20%; /* Dark Charcoal */
+    --chart-4: 0 0% 8%; /* Very dark background */
+    --chart-5: 0 0% 85%; /* Light text */
   }
 }
 
@@ -77,10 +81,10 @@ body {
 
 @layer utilities {
   .gradient {
-    @apply bg-gradient-to-b from-sky-400 via-blue-400 to-blue-500;
+    @apply bg-gradient-to-br from-[#0A74DA] via-[#1C1C1C] to-[#FFD43B];
   }
   .gradient-title {
-    @apply gradient font-extrabold tracking-tighter text-transparent bg-clip-text pb-2 pr-2;
+    @apply bg-gradient-to-r from-[#0A74DA] to-[#FFD43B] font-extrabold tracking-tighter text-transparent bg-clip-text pb-2 pr-2;
   }
 }
 
@@ -107,10 +111,10 @@ body {
   height: 100%;
   background: linear-gradient(
       to right,
-      rgba(147, 197, 253, 0.05) 1px,
+      rgba(10, 116, 218, 0.03) 1px,
       transparent 1px
     ),
-    linear-gradient(to bottom, rgba(147, 197, 253, 0.05) 1px, transparent 1px);
+    linear-gradient(to bottom, rgba(10, 116, 218, 0.03) 1px, transparent 1px);
   background-size: 50px 50px;
   pointer-events: none;
   z-index: -1;
@@ -123,5 +127,5 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background: radial-gradient(circle, transparent, rgba(147, 197, 253, 0.02));
+  background: radial-gradient(circle, transparent, rgba(10, 116, 218, 0.01));
 }
